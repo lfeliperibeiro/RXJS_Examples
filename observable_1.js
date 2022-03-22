@@ -12,6 +12,9 @@ const obs = new Observable(subscriber => {
     subscriber.next('This is')
     subscriber.next('an')
     subscriber.next('Observer')
+    // A partir do uso do complete estou encerrando a ação
+    subscriber.complete()
+    subscriber.next('Complete')
 
 })
 

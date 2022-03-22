@@ -1,4 +1,4 @@
-import { interval, from } from "rxjs";
+import { interval } from "rxjs";
 
 // interval gera um observable
 const numberGenerator = interval(500)
